@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Bookmarks</title>
+</head>
+<body>
+    <h2>Welcome to Django Bookmarks</h2><br>
+    {% if user.username %}
+        <p>Welcome {{ user.username }}!
+        Here you can share and store Bookmarks!</p>
+    {% else %}
+        <p>Welcome Guest user!
+        You need to <a href="/login/">login</a>
+        before ypu can store and share bookmarks.</p>
+    {% endif %}
+</body>
+</html>
